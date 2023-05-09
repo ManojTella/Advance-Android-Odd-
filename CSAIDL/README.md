@@ -29,12 +29,12 @@ Step 7: Save and run the application.
 
 /*
 Program to print the client/server services using AIDL”.
-Developed by: Manoj Guna Sundar Tella. 
-Registeration Number :212221240026.
+Developed by:challa sandeep.
+Registeration Number :212221240011.
 */
 
 ## MainActivity.java
-~~~
+
 package com.example.aidl;
 
 //import androidx.appcompat.app.AppCompatActivity; 
@@ -98,9 +98,9 @@ public class MainActivity extends AppComponentActivity implements View.OnClickLi
 //        int result = myInterface.multiplyTwoValuesTogether(firstNumber,secondNumber);
     }
 }
-~~~
+
 ## MultiplicationService.java
-~~~
+
 package com.example.aidl;
 
 import android.app.Service;
@@ -123,9 +123,9 @@ public class MultiplicationService extends Service {
         }
     };
 }
-~~~
+
 ## MultiplyInterface.aidl
-~~~
+
 // MultiplyInterface.aidl
 package com.example.aidl;
 
@@ -134,9 +134,9 @@ package com.example.aidl;
 interface MultiplyInterface {
   int multiplyTwoValuesTogether(int firstNumber, int secondNumber);
 }
-~~~
+
 ## activity_main.xml
-~~~
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -178,15 +178,18 @@ interface MultiplyInterface {
 
 
 </RelativeLayout>
-~~~
+
 
 ## OUTPUT
-![](1.png)
-![](2.png)
-![](3.png)
-![](4.png)
+<img width="1440" alt="ex1" src="https://user-images.githubusercontent.com/93427522/237008660-9250c6a2-913e-4195-b6ee-49cd86943c74.png">
 
+
+<img width="1440" alt="ex2" src="https://user-images.githubusercontent.com/93427522/237008951-10820a76-6cc3-41d5-b61a-213d29e0716c.png">
+
+<img width="454" alt="ex3" src="https://user-images.githubusercontent.com/93427522/237008767-7fc40087-b532-4728-8feb-1cf25e497a95.png">
+
+<img width="454" alt="ex4" src="https://user-images.githubusercontent.com/93427522/237008793-b8a84faf-83ba-4120-aaa6-8ffa3e81aa4f.png">
 
 
 ## RESULT
-Thus a Simple Android Application to create a AIDL interface and communicate the process between client and server using AIDL interface in Android Studio is developed and executed successfully.
+Thus a Simple Android Application to create a AIDL interface and communicate the process between client and server using AIDL interface in Android Studio is developed and executed successfully
