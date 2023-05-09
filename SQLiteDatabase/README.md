@@ -30,14 +30,14 @@ Step 7: Save and run the application.
 /*
 Program to print the DatabaseTable using the SQLite”.
 ```
-Developed by:Challa Sandeep
-Registeration Number :212221240011
+Developed by: Manoj Guna Sundar Tella.
+Registeration Number :212221240026.
 ```
 */
 
 ## MainActivity.java
 ```
-package com.example.sandeep;
+package com.example.manoj;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 ## DataBaseHelper.java
 ```
-package com.example.sandeep;
+package com.example.manoj;
 
 
 import android.content.Context;
@@ -136,7 +136,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 ```
 ## DataBaseManager.java
 ```
-package com.example.sandeep;
+package com.example.manoj;
 
 
 
@@ -301,14 +301,12 @@ public class DatabaseManager {
 ```
 
 ## OUTPUT
+![exp11](https://user-images.githubusercontent.com/94883876/237006786-73d1c534-b366-4241-a32f-778ea101602f.jpg)
 
-![Screenshot (2)](https://user-images.githubusercontent.com/93427522/236729040-32453072-2227-42a0-8d9b-9c571fbf4bba.png)
+![exp12](https://user-images.githubusercontent.com/94883876/237006826-e6561162-a9b1-46c3-8356-aa9da2c19aa5.jpg)
 
-![Screenshot (1)](https://user-images.githubusercontent.com/93427522/236730130-d61a08f6-d71c-4973-86c1-4d5d3b98074b.png)
+![exp1](https://user-images.githubusercontent.com/94883876/237006839-21140d54-5867-49e8-9a2a-5526af9b54c3.jpg)
 
-![Screenshot (3)](https://user-images.githubusercontent.com/93427522/236730142-067b7895-7bef-42fc-b80a-15c3b01c5492.png)
-
-![Screenshot (5)](https://user-images.githubusercontent.com/93427522/236730175-640f5d65-75d5-4695-9fc2-319b27e814b8.png)
 
 
 ## RESULT
