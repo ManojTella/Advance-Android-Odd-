@@ -34,7 +34,7 @@ Registeration Number : 212221240026.
 */
 
 ### MainActivity.java
-
+```
 package com.example.audiofile;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
+```
 ### activity_main.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.486" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
+```
 ## OUTPUT
 ![Screenshot 2023-05-10 192342](https://github.com/21003698/Advance-Android-Odd-/assets/93427522/070fae92-1838-4d2a-bd88-e6458504ca34)
 
