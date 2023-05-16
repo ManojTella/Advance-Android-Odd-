@@ -29,8 +29,8 @@ Step 7: Save and run the application.
 ```
 /*
 Program to print the client/server services using AIDL”.
-Developed by:challa sandeep.
-Registeration Number :212221240011.
+Developed by: Manoj Guna Sundar Tella.
+Registeration Number :212221240026.
 */
 ```
 ## MainActivity.java
