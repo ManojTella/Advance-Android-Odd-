@@ -29,13 +29,86 @@ Step 7: Save and run the application.
 ```
 /*
 Program to print the process of proximitysensor in android mobile devices”.
-Developed by:
-Registeration Number :
+Developed by: Manoj Guna Sundar Tella.
+Registeration Number : 212221240026.
 */
 ```
+### MainActivity.java
+```
+package com.manoj.sensor;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {
+    TextView sensorStatusTV;
+    SensorManager sensorManager;
+    Sensor proximitySensor;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        sensorStatusTV = findViewById(R.id.sensorStatusTV);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        if (proximitySensor == null) {
+            Toast.makeText(this, "No proximity sensor found in device.", Toast.LENGTH_SHORT).show();
+            finish();
+        } else {
+            Toast.makeText(this,"Proximity sensor is found",Toast.LENGTH_LONG).show();
+            sensorManager.registerListener(proximitySensorEventListener,
+                    proximitySensor,
+                    SensorManager.SENSOR_DELAY_NORMAL);
+        }
+    }
+    SensorEventListener proximitySensorEventListener = new SensorEventListener() {
+        @Override
+        public void onAccuracyChanged(Sensor sensor, int accuracy) {
+        }
+        @Override
+        public void onSensorChanged(SensorEvent event) {
+            if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
+                if (event.values[0] == 0) {
+                    sensorStatusTV.setText("Near");
+                } else {
+                    sensorStatusTV.setText("Away");
+                }
+            }
+        }
+    };
+}
+
+```
+### activity_main.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sensorStatusTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="50dp" />
+
+</RelativeLayout>
+```
 ## OUTPUT
-
+![Screenshot 2023-05-26 102456](https://github.com/ManojTella/Advance-Android-Odd-/assets/94883876/83aa7a3b-b5ab-4b00-939c-a5426fbf3bbd)
+![Screenshot 2023-05-26 102443](https://github.com/ManojTella/Advance-Android-Odd-/assets/94883876/8a904af4-dc40-482a-9295-a50d203a31c9)
+![Screenshot 2023-05-26 102514](https://github.com/ManojTella/Advance-Android-Odd-/assets/94883876/9feb014b-403c-426c-a08e-24edf49c57c2)
 
 
 
