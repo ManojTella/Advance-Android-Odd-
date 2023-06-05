@@ -1,6 +1,5 @@
 # Ex.No:6 Create a simple application to request storage and camera permission at RunTime using android studio.
 
-
 ## AIM:
 
 To develop a simple application for RunTime Permission in Android Studio.
@@ -114,8 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Storage Permission Granted", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this, "Storage Permission Denied", Toast.LENGTH_SHORT).show();
-            }
-        }
+            } }
     }
 }
 ```
@@ -155,8 +153,7 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
+ <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -201,8 +198,7 @@ public class MainActivity extends AppCompatActivity {
 
         </activity>
     </application>
-
-</manifest>
+  </manifest>
 ```
 ## OUTPUT:
 ![WhatsApp Image 2023-06-03 at 10 52 22](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/7fd444e1-219f-44d8-9789-d1154a0ee015)
@@ -210,8 +206,6 @@ public class MainActivity extends AppCompatActivity {
 ![1](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/37d9d5f0-b4b5-4f12-b927-c480099b6a26)
 
 ![2](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/3972c8b6-3c84-4570-a65b-351151c5887f)
-
-![3](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/288abf54-f6d4-4a10-aaa7-5548323e4983)
 
 ## RESULT
 Thus a Simple Android Application to request storage and camera permission at RunTime in Android Studio is developed and executed successfully.
