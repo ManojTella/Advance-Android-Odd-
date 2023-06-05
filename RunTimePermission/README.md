@@ -204,11 +204,8 @@ public class MainActivity extends AppCompatActivity {
 
 </manifest>
 ```
-
 ## OUTPUT:
 ![WhatsApp Image 2023-06-03 at 10 52 22](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/7fd444e1-219f-44d8-9789-d1154a0ee015)
-
-![WhatsApp Image 2023-06-03 at 10 52 40](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/873447a6-4f8f-45a2-9457-353fe7e60ef5)
 
 ![1](https://github.com/nithin-popuri7/Advance-Android-Odd-/assets/94154780/37d9d5f0-b4b5-4f12-b927-c480099b6a26)
 
